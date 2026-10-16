@@ -55,3 +55,11 @@ EXPLAIN QUERY PLAN
 SELECT StudentID, FirstName, LastName
 FROM Student
 WHERE ProgramID = 1; 
+
+-- Query 5: Create an index for student registrations
+CREATE INDEX IF NOT EXISTS idx_registration_student
+ON CourseRegistration(StudentID);
+
+-- Query 6: Create an index for students by program
+CREATE INDEX IF NOT EXISTS idx_student_program
+ON Student(ProgramID);
