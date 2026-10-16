@@ -1,18 +1,13 @@
-ADVANCE DATABASE SYSTEMS
+# ADVANCED DATABASE SYSTEMS
 
-PROJECT TITTLE:UNIVERSITY STUDENT PORTAL RESULT
+**Project Title: University Student Result Portal**
 
-CASE STUDY DESCRIPTION
-The selected case study is a university Student Result Portal, a database system designed to manage student
-accademic records in a university.
+## Case Study Description
 
-The main users of the system are students,lecturers, departmental administrators, and academic officers.
-   The database stores student details,departments,programmes,courses,lecturer information,course registrations,
-semesters,and student's results.
+The selected case study is a University Student Result Portal, a database system designed to manage students' academic records in a university.
 
-The databse supports operations such as student registration,course registration, assignment of lecturers 
-to courses,recording of student scores and grades,retrieval of accademic results, and preparationof Student
-transcripts.
+The main users of the system are students, lecturers, departmental administrators, and academic officers. The database stores student details, departments, programmes, courses, lecturer information, course registrations, semesters, and students' results.
 
-The purpose of the database is to organise accademic information,reduce unnecessary data duplication,
-maintain data accuracy,and make student records easier to retrieve and manage.
+The database supports operations such as student registration, course registration, assignment of lecturers to courses, recording of student scores and grades, retrieval of academic results, and preparation of student transcripts.
+
+The purpose of the database is to organise academic information, reduce unnecessary data duplication, maintain data accuracy, and make student records easier to retrieve and manage.
