@@ -13,7 +13,10 @@ This portfolio demonstrates database transactions and concurrency control using 
 
 ## Activities
 
-The portfolio will demonstrate transaction operations using the existing Student Result Portal database. SQL scripts and screenshots will be provided as evidence of the tests performed.
+The portfolio demonstrates transaction operations using the existing Student Result Portal database. SQL scripts and screenshots provide evidence of the tests performed.
+
+- Checked SQLite's isolation setting using `PRAGMA read_uncommitted;`, which returned `0`.
+- Captured the isolation-setting result as `Portfolio3_Isolation_Evidence.png`.
 
 ## Evidence Files
 
