@@ -48,9 +48,9 @@ This activity demonstrated the importance of checking isolation settings and ver
 
 - `Portfolio3_Transactions.sql`
 - `Portfolio3_Rollback_Evidence.png`
-
-- ## Conclusion
-
-The tests demonstrated the difference between ROLLBACK and COMMIT. ROLLBACK reversed a temporary score update, while COMMIT preserved a remark update. The original result was subsequently restored and verified.
 - `Portfolio3_Commit_Evidence.png`
 - `Portfolio3_Transaction_Analysis.md`
+
+- - ## Conclusion
+
+The tests demonstrated the difference between ROLLBACK and COMMIT. ROLLBACK reversed a temporary score update, while COMMIT preserved a remark update. The original result was subsequently restored and verified.
