@@ -31,9 +31,6 @@ After the COMMIT test, the original remark was restored to `Excellent`. The fina
 
 SQLite manages database transactions and coordinates access to the database file. This exercise tested transaction behaviour using one database session. It did not perform a simultaneous multi-user concurrency test, so no claim is made about measured concurrent performance.
 
-## Conclusion
-
-The tests demonstrated the difference between ROLLBACK and COMMIT. ROLLBACK reversed a temporary score update, while COMMIT preserved a remark update. The original result was subsequently restored and verified.
 ## Isolation and Concurrency Analysis
 
 ### Isolation Evidence
@@ -51,5 +48,9 @@ This activity demonstrated the importance of checking isolation settings and ver
 
 - `Portfolio3_Transactions.sql`
 - `Portfolio3_Rollback_Evidence.png`
+
+- ## Conclusion
+
+The tests demonstrated the difference between ROLLBACK and COMMIT. ROLLBACK reversed a temporary score update, while COMMIT preserved a remark update. The original result was subsequently restored and verified.
 - `Portfolio3_Commit_Evidence.png`
 - `Portfolio3_Transaction_Analysis.md`
