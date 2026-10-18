@@ -53,4 +53,4 @@ This activity demonstrated the importance of checking isolation settings and ver
 
 - - ## Conclusion
 
-The tests demonstrated the difference between ROLLBACK and COMMIT. ROLLBACK reversed a temporary score update, while COMMIT preserved a remark update. The original result was subsequently restored and verified.
+The tests illustrated the difference between `ROLLBACK` and `COMMIT`. `ROLLBACK` cancelled a temporary score update, while `COMMIT` permanently saved a remark update. The isolation setting was also checked using `PRAGMA read_uncommitted`, which returned `0`, confirming that the setting was disabled. Although the concurrency test was inconclusive due to transaction-state and database-lock errors, the final query verified that the original result remained unchanged, demonstrating the importance of transaction management and data integrity.
