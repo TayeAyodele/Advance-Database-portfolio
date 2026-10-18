@@ -34,7 +34,19 @@ SQLite manages database transactions and coordinates access to the database file
 ## Conclusion
 
 The tests demonstrated the difference between ROLLBACK and COMMIT. ROLLBACK reversed a temporary score update, while COMMIT preserved a remark update. The original result was subsequently restored and verified.
+## Isolation and Concurrency Analysis
 
+### Isolation Evidence
+The SQLite isolation setting was checked using `PRAGMA read_uncommitted;`, which returned `0`. This confirms that the `read_uncommitted` setting is disabled. The database journal mode was also checked and returned `delete`.
+
+### Concurrency Test and Limitation
+A concurrency test was attempted using two DB Browser for SQLite windows connected to the same database file. However, the test was inconclusive because SQLite returned transaction-state and database-lock errors when attempting to start a write transaction. Therefore, the test does not establish a successful concurrent transaction or a confirmed locking outcome.
+
+### Data Integrity Verification
+After the test attempts, the `Result` table was queried again. RegistrationID 1 retained its original values: Score 75, Grade A, GradePoint 5.0, and Remark Excellent. This confirmed that the saved result remained unchanged during the checks.
+
+### Reflection
+This activity demonstrated the importance of checking isolation settings and verifying stored data after transaction operations. It also showed that concurrency tests must be carefully controlled and their results interpreted accurately. A successful concurrency test remains a limitation of this practical exercise.
 ## Evidence Files
 
 - `Portfolio3_Transactions.sql`
